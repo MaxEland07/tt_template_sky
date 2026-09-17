@@ -1,23 +1,11 @@
-<!---
-
-This file is used to generate your project datasheet. Please fill in the information below and delete any unused
-sections.
-
-You can also include images in this folder and reference them in the markdown. Each image must be less than
-512 kb in size, and the combined size of all images must be less than 1 MB.
--->
-
 ## How it works
 
-Explain how your project works
-Testing actions
+This is a simple 8-bit combinational adder test module. It adds two 8-bit inputs (`ui_in` and `uio_in`) and outputs the low 8 bits of the resulting sum on `uo_out`. The bidirectional I/O pins are configured purely as inputs, and internal unused nets are tied off to prevent synthesis warnings.
 
 ## How to test
 
-Explain how to use your project
-Testing actions
+Set dedicated inputs (`ui_in`) to any 8-bit value and bidirectional inputs (`uio_in`) to a second 8-bit value. Verify on the dedicated output pins (`uo_out`) that the value equals `(ui_in + uio_in) & 0xFF`.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
-Testing actions
+None.
